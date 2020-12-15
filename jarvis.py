@@ -71,9 +71,9 @@ def AI():
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login('saadyarkhan11@gmail.com', 'ahmer1976')
+        server.login('email', 'password')
 
-        server.sendmail('ahmeryarkhan@gmail.com', to, content)
+        server.sendmail('sender email', to, content)
         server.close()
 
 
